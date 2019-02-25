@@ -5,7 +5,7 @@
 # Developed for educational porpuse#
 # in Halmstad University, Sweden   #
 # Network Forensics Master's       #
-# Dec 2017                         #_
+# Dec 2017                         #
 # by Shooresh Sufiye               #
 # www.spigerhome.blogspot.se       #
 #===================================
@@ -656,63 +656,32 @@ if __name__ == "main":
 			ddos_menu()
 
 	def ui():
-		os.system("clear")
-		for i in range(len(menu_m)):
-			if (i > 0 and i < len(menu_m)-1):
-				print("|", i ,menu_m[i][1])  #  number?
-			else:
-				print(menu_m[i])
+		while(true):
+		    os.system("clear")
+		    for i in range(len(menu_m)):
+			    if (i > 0 and i < len(menu_m)-1):
+				    print("|", i ,menu_m[i][1])  #  number?
+			    else:
+				    print(menu_m[i])
 
-		menu_choice = input("Enter choice number? ")
-		if menu_choice == "1":
-			app_menu()
-		elif menu_choice == "2":
-			info_menu()
-		elif menu_choice == "3":
-			dos_menu()
-		elif menu_choice == "4":
-			mitm_menu()
-		elif menu_choice == "5":
-			ddos_menu()
-		elif menu_choice == "6":
-			os.system("clear")
-			exit()
-		ui()
+		    menu_choice = input("Enter choice number? ")
+		    if menu_choice == "1":
+			    app_menu()
+		    elif menu_choice == "2":
+			    info_menu()
+		    elif menu_choice == "3":
+			    dos_menu()
+		    elif menu_choice == "4":
+			    mitm_menu()
+		    elif menu_choice == "5":
+			    ddos_menu()
+		    elif menu_choice == "6":
+			    os.system("clear")
+			    exit()
 
 	ui()
 
 
-logo_str =  '''
-                                 */                                            
-                                 %@@@#                                         
-                                *@@@@@@@%,         ./%@@&                      
-                          ,/((//(/#&@@@@@@@&* .#&@@@@@@@@,                     
-                        *(/////(*.  .(%%%@@@@@@@@@@@@@@@@*                     
-                       .(/*(##%/,  ,% ,@,  ./**&&* .,//                        
-                    ./#&@@@@/*,   (@@#   .,.%.%@/ .*&@@#.                    
-                   #@@@@@&(****(,.         ./,,@@#  ,(@@@%%(                   
-             ,#@@%&&%%@@&/******(,.       ,//.     .*#(#(//*                   
-           *@#.     ,(//********##(,....,*(*((*..,,//*((#%#.                   
-         *@#      /////******(&(******(*********/**///#@@@@@%                  
-        #@*      (@@@&&(***//*&/*************/((#&@@@@@@@@&%%&%%&@*            
-       @%       .&@@@@@&@@@#**/@&(/**********/(#&&@@@@@@@@@@@&.  .@#           
-     *@*    ,%@%&@&&@#&@@&*******(%&&&&&&&(*****//*///(((##%&@,   *@,          
-   ,,.     &&   .&@(%@@(*****/#&&%(/******/(&&&%#(////(##(*(#%,    &%          
-          *@,    ((,(//*********/(&@@@@@@@@@@@&&&&@@##%%%&@%.    %%          
-          (@,      ,%((/*************((/(/*///////((((%##@%  (@,   %&          
-          ,@,       %@%((//**/#@@@&(###((##%#((#######(   .@,  %&.         
-           %%        (%&@@%#(///////(#&@@@@@@@@@@@@@@@#.@@@,   %%  %&          
-           %%        /@%/###%%%&%###(((####(##%@@@@@@@, (.*@*  /@, .&%         
-           *@,      ,@/  .%&%###%%%%%%%&(%@@@@@%/ (##%.    #@. ,@(   ,         
-           *@,      ,@,     (@@@%%######/   ,##,   ##%&    #@,  *@/            
-          *@(       .@#        @,     .(/    .       *@   ,@*     #@#.         
-         (@,         %%        @,                    %%   %%        ,(         
-                     ,@        &%                   /@,  *@,                   
-                      &,       .@#                  %%  .                    
-                      *%       ..&&                *@*  %&,                    
-                       @*       ,*&&               ,&&.   #@@%                 
-                      ,@#        ,/@(                /%%&,                     
-                                .*%@*   
-'''
+
 
 	#
